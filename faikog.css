@@ -1,0 +1,171 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 0;
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #007BFF;
+  }
+  
+  a:hover {
+    color: #0056b3;
+  }
+  
+  /* Header */
+  header {
+    background-color: #002244;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    position: relative;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .logo {
+    max-width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 10px 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #00bfff;
+  }
+  
+  /* Main Sections */
+  main {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #fff;
+  }
+  
+  section {
+    margin-bottom: 50px;
+  }
+  
+  h2 {
+    color: #002244;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #007BFF;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  h4 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  ul, ol {
+    margin: 10px 0 20px 30px;
+  }
+  
+  li {
+    margin-bottom: 8px;
+  }
+  
+  p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  /* Highlights */
+  .civil {
+    color: #b22222;
+    font-weight: bold;
+  }
+  
+  .software {
+    color: #228B22;
+    font-weight: bold;
+  }
+  
+  /* Contact Section */
+  .email {
+    margin-top: 10px;
+    font-size: 1.1rem;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  .email a {
+    color: #007BFF;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    background-color: #002244;
+    color: white;
+    padding: 20px 0;
+    margin-top: 40px;
+    position: relative;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  
+    .logo {
+      max-width: 80px;
+    }
+  
+    header h1 {
+      font-size: 1.5rem;
+    }
+  
+    main {
+      padding: 20px 15px;
+    }
+  }
+  
