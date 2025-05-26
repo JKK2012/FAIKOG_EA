@@ -133,6 +133,7 @@
 
   .email a {
     color: #007BFF;
+    text-decoration: double;
   }
   
   /* Footer */
