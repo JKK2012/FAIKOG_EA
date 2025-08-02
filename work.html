@@ -3,9 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Family Tree</title>
+    <style>
+        .tree ul {
+            padding-top: 20px; position: relative;
+            transition: all 0.5s;
+        }
+        .tree li {
+            float: left; text-align: center;
+            list-style-type: none;
+            position: relative;
+            padding: 20px 5px 0 5px;
+            transition: all 0.5s;
+        }
+        .tree li::before, .tree li::after {
+            content: '';
+            position: absolute; top: 0; right: 50%;
+            border-top: 1px solid #ccc;
+            width: 50%; height: 20px;
+        }
+        .tree li::after {
+            right: auto; left: 50%;
+            border-left: 1px solid #ccc;
+        }
+        .tree li:only-child::before, .tree li:only-child::after {
+            display: none;
+        }
+        .tree li:only-child { padding-top: 0; }
+        .tree li:first-child::before, .tree li:last-child::after {
+            border: 0 none;
+        }
+        .tree li:last-child::before {
+            border-right: 1px solid #ccc;
+            border-radius: 0 5px 0 0;
+        }
+        .tree li:first-child::after {
+            border-radius: 5px 0 0 0;
+        }
+        .tree div {
+            border: 1px solid #ccc;
+            padding: 5px 10px;
+            display: inline-block;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+    </style>
 </head>
 <body>
-    <h1>how are you</h1>
+    <h2>Family Tree</h2>
+    <div class="tree">
+        <ul>
+            <li>
+                <div>Grandfather</div>
+                <ul>
+                    <li>
+                        <div>Father</div>
+                        <ul>
+                            <li><div>Me</div></li>
+                            <li><div>Brother</div></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div>Uncle</div>
+                        <ul>
+                            <li><div>Cousin</div></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
 </body>
 </html>
